@@ -1,5 +1,4 @@
 FROM python:3.11-slim
-# LibreOffice is needed to export PDF from the generated PPTX
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libreoffice-impress libreoffice-core fonts-dejavu \
  && rm -rf /var/lib/apt/lists/*
